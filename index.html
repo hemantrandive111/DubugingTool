@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,36 @@
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #ffffff;
-            background-color: #fbfdfd; /*Image Side Bar*/
+            background-color: #fbfdfd;
+            /*Image Side Bar*/
         }
+
         /*Development kit Dashboard*/
         header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        background-color: #000000;
-        position: relative;
-        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #000000;
+            position: relative;
+
         }
+
         .logo {
-        flex: 1;
+            flex: 1;
         }
 
         .logo img {
-            max-height: 70px; /* Adjust as per your logo's size */
+            max-height: 70px;
+            /* Adjust as per your logo's size */
         }
 
         .header-content {
             flex: 9;
             text-align: center;
         }
-/*
+
+        /*
        nav {
           margin-top: 10px;
         }
@@ -46,7 +52,7 @@
         }
 */
         h1 {
-           margin: 0;
+            margin: 0;
         }
 
         /* Background image slider */
@@ -86,6 +92,7 @@
         .cta-button:hover {
             background-color: #156bcd;
         }
+
         /*Tool Side background Color*/
         .tools {
             display: flex;
@@ -94,7 +101,8 @@
             padding: 40px 20px;
             background: #eceaea;
         }
-         /*Tool Box Color*/
+
+        /*Tool Box Color*/
         .tool {
             flex: 1 1 30%;
             margin: 20px;
@@ -133,8 +141,8 @@
             transition: color 0.2s;
         }
 
-        .rating input:checked ~ label,
-        .rating input:hover ~ label {
+        .rating input:checked~label,
+        .rating input:hover~label {
             color: #f1c40f;
         }
 
@@ -149,9 +157,10 @@
         }
     </style>
 </head>
+
 <body>
 
- <!--   <header>
+    <!--   <header>
         <h1>Development Kit Dashboard</h1>
     </header>
 
@@ -161,51 +170,55 @@
     -->
     <header>
         <div class="logo">
-            <img src="C:\Users\Hemant Randive\OneDrive\Pictures\Screenshots\Screenshot 2024-10-01 204232.png" alt="Dev Kit Logo" />
+            <img src="C:\Users\Hemant Randive\OneDrive\Pictures\Screenshots\Screenshot 2024-10-01 204232.png"
+                alt="Dev Kit Logo" />
         </div>
         <div class="header-content">
             <h1>Dev Kit Dashboard</h1>
-<!--            <nav>
+            <!--            <nav>
                 <a href="#tools">Tools</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>
--->        </div>
+-->
+        </div>
     </header>
 
-<!--    <section class="hero">
+    <!--    <section class="hero">
         <h1>Build Smarter & Faster</h1>
         <p>Your one-stop toolkit for software development.</p>
         <button class="cta-button">Get Started</button>
     </section> 
 -->
-                <!-- Slide 1 -->
-        <!--        <div class="slide">
+    <!-- Slide 1 -->
+    <!--        <div class="slide">
                     <img src="https://developers.giphy.com/branch/master/static/api-c99e353f761d318322c853c03ebcf21b.gif" alt="Slide 1">
                 </div>
-         -->   
-                <!-- Slide 2 -->
-                <section class="hero" style="position: relative; display: inline-block;">
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/dresma/Dresma_Library/senior-software-engineer_Wy82tYQym.gif" alt="Slide 1" style="width:100%;">
-                        <div class="text-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgb(0, 0, 0); text-align: center;">
-                            <h1 style="font-size: 42px; font-weight: bold; margin: 0;">Build Smarter & Faster</h1>
-                            <p style="font-size: 20px; margin: 10px 0;">Your one-stop toolkit for software development.</p>
-                        </div>
-                    </div>
-                </section>
-                
-                
-             
-                <!-- Slide 3 -->
-        <!--        <div class="slide">
+         -->
+    <!-- Slide 2 -->
+    <section class="hero" style="position: relative; display: inline-block;">
+        <div class="slide">
+            <img src="https://ik.imagekit.io/dresma/Dresma_Library/senior-software-engineer_Wy82tYQym.gif" alt="Slide 1"
+                style="width:100%;">
+            <div class="text-overlay"
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgb(0, 0, 0); text-align: center;">
+                <h1 style="font-size: 42px; font-weight: bold; margin: 0;">Build Smarter & Faster</h1>
+                <p style="font-size: 20px; margin: 10px 0;">Your one-stop toolkit for software development.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Slide 3 -->
+    <!--        <div class="slide">
                     <img src="https://theninehertz.com/wp-content/uploads/2020/06/full-stack-development.gif" alt="Slide 3">
             </div>
             -->
-            <!-- Navigation buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
     </section>
 
     <style>
@@ -215,23 +228,24 @@
             margin: auto;
             overflow: hidden;
         }
-    
+
         .slides {
             display: flex;
             transition: transform 1s ease-in-out;
         }
-    
+
         .slide {
             min-width: 100%;
             box-sizing: border-box;
         }
-    
+
         .slide img {
             width: 100%;
             display: block;
         }
-    
-        .prev, .next {
+
+        .prev,
+        .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -245,36 +259,37 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
         }
-    
+
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
-    
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
     </style>
-    
+
     <script>
         let slideIndex = 0;
         showSlides();
-    
+
         function showSlides() {
             let slides = document.querySelectorAll('.slide');
             slides.forEach((slide, index) => {
                 slide.style.display = 'none';
             });
-    
+
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1;
             }
-    
+
             slides[slideIndex - 1].style.display = 'block';
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-    
+
         function plusSlides(n) {
             slideIndex += n - 1;
             showSlides();
@@ -283,8 +298,50 @@
 
     <div class="tools" id="tools">
         <h2>All Tools</h2>
-        
-    <section class="tools" id="tools">
+
+        <section class="tools" id="tools">
+
+            <!-- Unit-Test-Buddy.com -->
+            <div class="tool">
+                <a href="" target="_blank">
+                    <img src="https://storage.googleapis.com/appgptstore.appspot.com/logos/GOFhZ1n4RZ-unit-test-buddy.png?GoogleAccessId=firebase-adminsdk-i3cuk%40appgptstore.iam.gserviceaccount.com&Expires=16447017600&Signature=XgjEk6TdeGOtvYnrq5vKcGB5E7GHuaMq0lGmmcjLn1DCyMTecc5LcGg8dYJHPOGdUMWgHNCElNjiwn8VUESJOTF5z0SJEZ6%2F0qVp6I%2BZa4BEn9npj9bJqxdZtqSYvXos29pLHq0%2BK8smCDab721yuVKpTzEkzvUm%2BjllOus9bbO8e9L41ej86lo8deVGTUbR%2F04lauGNzCTPsW0Ek6XQxW2yrDoeF0mz9UNg9dnl7rhLfcloIN3CNiUrqZgLAHFCzPtdQ6dO%2FaJHBGEoAeo1j1o44rKosATxX9yDe5gqjZl37jk2G3rP54xPnyNJdvP1yRjUk7TvLjNsxp4PnIErDQ%3D%3D"
+                        alt="Unit-Test-Buddy Logo">
+                </a>
+                <h3>Unit-Test-Buddy.com</h3>
+                <div class="rating">
+                    <input type="radio" id="star5-Unit-Test-Buddy" name="Unit-Test-Buddy" value="5">
+                    <label for="star5-Unit-Test-Buddy">&#9733;</label>
+                    <input type="radio" id="star4-Unit-Test-Buddy" name="Unit-Test-Buddy" value="4">
+                    <label for="star4-Unit-Test-Buddy">&#9733;</label>
+                    <input type="radio" id="star3-Unit-Test-Buddy" name="Unit-Test-Buddy" value="3">
+                    <label for="star3-Unit-Test-Buddy">&#9733;</label>
+                    <input type="radio" id="star2-Unit-Test-Buddy" name="Unit-Test-Buddy" value="2">
+                    <label for="star2-Unit-Test-Buddy">&#9733;</label>
+                    <input type="radio" id="star1-Unit-Test-Buddy" name="Unit-Test-Buddy" value="1">
+                    <label for="star1-Unit-Test-Buddy">&#9733;</label>
+                </div>
+            </div>
+
+            <!-- Testim.io -->
+            <div class="tool">
+                <a href="https://www.testim.io/" target="_blank">
+                    <img src="https://www.testim.io/wp-content/uploads/2023/03/Tricentis-Testim_Secondary.jpg" alt="Testim.io Logo">
+                </a>
+                <h3>Testim.io</h3>
+                <div class="rating">
+                    <input type="radio" id="star5-Testim.io" name="Testim.io" value="5">
+                    <label for="star5-Testim.io">&#9733;</label>
+                    <input type="radio" id="star4-Testim.io" name="Testim.io" value="4">
+                    <label for="star4-Testim.io">&#9733;</label>
+                    <input type="radio" id="star3-Testim.io" name="Testim.io" value="3">
+                    <label for="star3-Testim.io">&#9733;</label>
+                    <input type="radio" id="star2-Testim.io" name="Testim.io" value="2">
+                    <label for="star2-Testim.io">&#9733;</label>
+                    <input type="radio" id="star1-Testim.io" name="Testim.io" value="1">
+                    <label for="star1-Testim.io">&#9733;</label>
+        </div>
+    </div>
+            
      <!-- ChatGPT -->
      <div class="tool">
         <a href="https://chatgpt.com/" target="_blank">
@@ -303,11 +360,11 @@
             <input type="radio" id="star1-chatgpt" name="rating-chatgpt" value="1">
             <label for="star1-chatgpt">&#9733;</label>
         </div>
-    </div>     
+    </div>
 
     </section>
 </ul>
 </div>
- 
+
 </body>
 </html>
